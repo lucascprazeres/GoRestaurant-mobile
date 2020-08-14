@@ -55,9 +55,7 @@ const Dashboard: React.FC = () => {
 
   async function handleNavigate(id: number): Promise<void> {
     navigation.navigate('FoodDetails', {
-      param: {
-        id,
-      },
+      id,
     });
   }
 

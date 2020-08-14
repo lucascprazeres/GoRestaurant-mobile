@@ -47,7 +47,7 @@ const apiMock = new AxiosMock(api);
 
 describe('Orders', () => {
   it('should be able to list the food', async () => {
-     const favorites = [
+    const favorites = [
       {
         id: 2,
         name: 'Veggie',
@@ -63,7 +63,7 @@ describe('Orders', () => {
     ];
 
     apiMock.onGet('/favorites').reply(200, favorites);
-    
+
     const item = {
       id: 1,
       name: 'Ao molho',
@@ -113,7 +113,7 @@ describe('Orders', () => {
   });
 
   it('should be able to increment food quantity', async () => {
-     const favorites = [
+    const favorites = [
       {
         id: 2,
         name: 'Veggie',
@@ -129,7 +129,7 @@ describe('Orders', () => {
     ];
 
     apiMock.onGet('/favorites').reply(200, favorites);
-    
+
     const item = {
       id: 1,
       name: 'Ao molho',
@@ -185,7 +185,7 @@ describe('Orders', () => {
   });
 
   it('should be able to decrement food quantity', async () => {
-     const favorites = [
+    const favorites = [
       {
         id: 2,
         name: 'Veggie',
@@ -201,7 +201,7 @@ describe('Orders', () => {
     ];
 
     apiMock.onGet('/favorites').reply(200, favorites);
-    
+
     const item = {
       id: 1,
       name: 'Ao molho',
@@ -275,7 +275,7 @@ describe('Orders', () => {
   });
 
   it('should not be able to decrement food quantity below than 1', async () => {
-     const favorites = [
+    const favorites = [
       {
         id: 2,
         name: 'Veggie',
@@ -291,7 +291,7 @@ describe('Orders', () => {
     ];
 
     apiMock.onGet('/favorites').reply(200, favorites);
-    
+
     const item = {
       id: 1,
       name: 'Ao molho',
@@ -357,7 +357,7 @@ describe('Orders', () => {
   });
 
   it('should be able to increment an extra item quantity', async () => {
-     const favorites = [
+    const favorites = [
       {
         id: 2,
         name: 'Veggie',
@@ -373,7 +373,7 @@ describe('Orders', () => {
     ];
 
     apiMock.onGet('/favorites').reply(200, favorites);
-    
+
     const item = {
       id: 1,
       name: 'Ao molho',
@@ -435,7 +435,7 @@ describe('Orders', () => {
   });
 
   it('should be able to decrement an extra item quantity', async () => {
-     const favorites = [
+    const favorites = [
       {
         id: 2,
         name: 'Veggie',
@@ -451,7 +451,7 @@ describe('Orders', () => {
     ];
 
     apiMock.onGet('/favorites').reply(200, favorites);
-    
+
     const item = {
       id: 1,
       name: 'Ao molho',
